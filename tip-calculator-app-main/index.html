@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body class="grid place-content-center ">
+  <div class="logo flex justify-center m-4 ">
+    <img src="./images/logo.svg" alt="logo">
+  </div>
+  <div class="container flex justify-center gap-5 items-center bg-white rounded-2xl shadow-md overflow-hidden m-0.5 h-72">
+    <div class="right-card bg-white" id="right-card">
+
+      <label class="text-2 text-slate-500">Bill</labe>
+        <img src="./images/icon-dollar.svg" class="icon-dollar" alt="icon dollar">
+        <input type="number" id="bill" class="relative text-end input" placeholder="0.00">
+        
+        <p class="text-2 text-slate-500">select tip%</p>
+        <div class="grid grid-cols-3 gap-3  percentage-choice"  >
+          <button class="btn" value="5">5%</button>
+          <button class="btn" value="10">10%</button>
+          <button class="btn" value="15">15%</button>
+          <button class="btn" value="25">25%</button>
+          <button class="btn" value="50">50%</button>
+          <input class="input input-custom " type="number" placeholder="Custom">
+        </div>
+
+
+        <div class="NumPeo">
+          <label  class="text-2 text-slate-500 ">Number of People</label>
+          <p class="errorMsge"></p>
+          <input type="number" id="number" placeholder="0.00" class="relative input  text-end">
+          <img src="./images/icon-person.svg" class="icon" alt="icon person">
+        </div>
+    </div>
+    <div class="left-card rounded-2xl">
+      <div>
+        <h4 class="text-white">Tip Amount
+          <p class="text-sm text-slate-500">/ person</p>
+        </h4>
+        <span>$</span><span id="result-tip">0.00</span>
+      </div>
+
+      <div>
+        <h4 class="text-white">Total
+          <p class="text-sm text-slate-500">/ person</p>
+        </h4>
+        <span class="text-end">$</span><span class="text-end" id="result-total">0.00</span>
+      </div>
+      <button class="w-60 res-btn" id="reset" disabled >Reset</button>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+      href="#">Mohammad Rahal</a>.
+  </div>
+  <script src="./js/spaghetti.js"></script>
+</body>
+
+</html>

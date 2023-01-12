@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+*,
+*::after,
+*::before {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+
+.attribution {
+     font-size: 11px;
+     text-align: center;
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%);
+}
+
+:root {
+     /* Primary */
+     --Strong-cyan: hsl(172, 67%, 45%);
+
+     /* Neutral */
+     --Very-dark-cyan: hsl(183, 100%, 15%);
+     --Dark-grayish-cyan: hsl(186, 14%, 43%);
+     --Grayish-cyan: hsl(184, 14%, 56%);
+     --Light-grayish-cyan: hsl(185, 41%, 84%);
+     --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+     --White: hsl(0, 0%, 100%);
+}
+
+body {
+     height: 100vh;
+     background-color: var(--Light-grayish-cyan);
+     font-family:'Space Mono', sans-serif;
+     font-size: 15px;
+}
+
+.input{
+     border: transparent;
+     background: var(--Very-light-grayish-cyan);
+     padding: 0.2rem 0.3rem;
+     cursor: pointer;
+ }
+
+ .input:focus{
+     border: 1px solid var(--Strong-cyan);
+ }
+
+
+.right-card{
+    height: 250px;
+    width: 300px;
+    padding: 1rem;
+}
+
+.left-card{
+     background-color: var(--Very-dark-cyan);
+     height: 250px;
+     width: 300px;
+     padding: 1rem;
+     position: relative;
+    right: 13px;
+}
+
+
+.btn {
+     background-color: var(--Very-dark-cyan);
+     color: var(--White);
+     font-size: 1rem;
+     text-align: center;
+}
+
+.btn:hover {
+     background-color: var(--Strong-cyan);
+     color: var(--Very-dark-cyan);
+}
+
+.res-btn{
+     color:var(--White);
+}
+
+.icon-dollar{
+position: relative;
+top: 20px;
+left: 6px;
+right: 0;
+z-index: 1;
+}
+
+.icon{
+     position: relative;
+    bottom: 22px;
+    left: 0;
+    right: 0;
+}
+
+@media (max-width: 768px) { 
+     .container{
+       width: 380px !important;
+         height: 90vh !important;
+         display: flex;
+         flex-wrap: wrap;
+         gap: 1rem;
+    }
+     }
+
